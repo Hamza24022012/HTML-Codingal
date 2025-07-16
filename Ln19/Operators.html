@@ -7,12 +7,27 @@
 </head>
 <body>
     <h1>Diff. </h1>
-    <p id="result"></p>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="multi"></p>
+    <p id="divi"></p>
     <script>
+         var Sum_1 = 8 //Statement1
+            var Sum_2 = 4 //Statement2
+            var Total = Sum_1 + Sum_2 //Statement3
+            document.getElementById("add").innerHTML = "Result =" + Total //Statement4
         var Sum_1 = 8 //Statement1
         var Sum_2 = 4 //Statement2
         var Total = Sum_1 - Sum_2 //Statement3
-        document.getElementById("result").innerHTML = "Result =" + Total //Statement4
+        document.getElementById("sub").innerHTML = "Result =" + Total //Statement4
+        var Sum_1 = 8 //Statement1
+            var Sum_2 = 4 //Statement2
+            var Total = Sum_1 * Sum_2 //Statement3
+            document.getElementById("multi").innerHTML = "Result =" + Total //Statement4
+            var Sum_1 = 8 //Statement1
+                var Sum_2 = 4 //Statement2
+                var Total = Sum_1 / Sum_2 //Statement3
+                document.getElementById("divi").innerHTML = "Result =" + Total //Statement4
     </script>
 </body>
 </html>
