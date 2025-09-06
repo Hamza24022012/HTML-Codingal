@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <p>muliply every element by 10</p>
+    <script>
+        var numbers = [26, 38, 18, 45]
+        function myfunction(num) {
+            return num * 10
+        }
+        var newarray = numbers.map(myfunction)
+        document.getElementById("result").innerHTML = newarray
+    </script>
+    <button onclick="ascending()">ascending order</button>
+    <button onclick="descending()">descending order</button>
+    <p id="result"></p>
+    <script>
+        var numbers = [100, 35, 45, 14, 27, 7]
+        document.getElementById("result").innerHTML = numbers
+        function ascending() {
+
+            numbers.sort(function (a, b) { return a - b })
+
+            document.getElementById("result").innerHTML = numbers
+        }
+
+
+        function descending() {
+
+            numbers.sort(function (a, b) { return b - a })
+
+            document.getElementById("result").innerHTML = numbers
+
+        }
+
+    </script>
+</body>
+</html>
