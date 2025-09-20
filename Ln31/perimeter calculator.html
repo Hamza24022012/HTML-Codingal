@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var choice = prompt("Welcome to Perimeter Calculator.\n please enter your choice \n 1.Perimeter of rectangtle. \n 2.Perimeter of triangle. \n 3.Perimeter of circle. \n 4.Perimeter of parallelogram.")
+        if (choice == "1") {
+            var l = prompt("Enter length")
+            var b = prompt("Enter breadth")
+
+            var result = (Number(l) + Number(b)) * 2
+            alert("Area is " + result)
+        }
+        if (choice == "2") {
+            var s1 = prompt("Enter side 1")
+            var b = prompt("Enter base")
+             var s2 = prompt("Enter side 2")
+
+            var result = Number(s1) + Number(b) + Number(s2)
+            alert("Area is " + result)
+        }
+        if (choice == "3") {
+            var r = prompt("Enter radius")
+            var result = 2 * Number(r) * 3.142
+            alert("Area is " + result)
+        }
+        if (choice == "4") {
+            var h = prompt("Enter height")
+            var cb = prompt("Enter corresponding base")
+
+            var result = 2 * (Number(h) + Number(cb))
+            alert("Area is " + result)
+        }
+    </script>
+</body>
+</html>
