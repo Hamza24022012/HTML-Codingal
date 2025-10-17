@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #fffefe33;
+            border-bottom: 1px solid #fffefe73;
+            padding: 10px;
+            position: relative;
+        }
+
+        .topnav a {
+            color: #1135a29c;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 10px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .topnav a:hover {
+           color: hsla(211, 74%, 47%, 0.485);
+                 background-color: #a39e9eab;
+        }
+
+        .topnav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 3px;
+            background-color: #0078d7;
+            transition: width 0.3s ease;
+        }
+
+        .topnav.a:hover::after {
+            width: 100%;
+        }
+
+        .topnav a.active::after {
+            width: 100%;
+        }
+
+        topnav a.active {
+            color: #fffefe67;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="Homepages.html">Home</a>
+        <a href="Games.html">Games</a>
+        <a href="News and Announcements.html">News and Announcements</a>
+        <a href="Community.html">Community</a>
+    </div>
+</body>
+
+</html>
