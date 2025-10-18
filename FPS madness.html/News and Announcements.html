@@ -58,7 +58,53 @@
             color: #fffefe67;
             font-weight: bold;
         }
-    </style>
+        * {margin: 0;
+        padding: 0;
+    box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+.image-section {
+height: 400px;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.overlay {
+    background-color: rgba(red, green, blue, alpha),0,0.4;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.overlay h1 {
+    color: white;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.content-section {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px,40px;
+}
+.content-section h2 {
+font-size: 24px;
+margin-bottom: 10px;
+font-weight: bold;
+}
+.content-section p {
+   max-width: 700px;
+   margin: 0 auto;
+   line-height: 1.6;
+font-size: 16px;
+}
+#section1 {
+    background-image: url('https://imgs.crazygames.com/games/krunker-io/cover-1591336739727.png?metadata=none&quality=60&height=6533');
+}
+html {
+scroll-behavior: smooth;}
+</style>
 </head>
 
 <body>
@@ -68,6 +114,14 @@
         <a class="active" href="News and Announcements.html">News and Announcements</a>
         <a href="Community.html">Community</a>
     </div>
+<div class="image-section" id="section1">
+    <div class="overlay">
+    <h1>New games !</h1>
+</div>
+</div>
+<div class="content-section">
+<h2>New games !</h2>
+<p>Two new games are to be added soon</p>
+</div>
 </body>
-
 </html>
