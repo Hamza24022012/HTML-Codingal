@@ -63,10 +63,47 @@
             left:0;
             bottom:0;
             width: 100%;
-            background-color:black;
+            background-color:rgba(0, 0, 0, 0.366);
             color:white;
             text-align:center;
         }
+        
+        body {
+background-color: #fffafa;
+color: white;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+}
+
+h1 {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.game-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+}
+
+.game-card {
+background-color: #000000;
+border-radius: 12px;
+overflow: hidden;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card img {
+width: 1000px;
+height: 500px;
+
+}
+
+a {
+text-decoration: none;
+color: white;
+}
     </style>
 </head>
 
@@ -76,11 +113,38 @@
         <a href="Games.html">Games</a>
         <a href="News and Announcements.html">News and Announcements</a>
         <a href="Community.html">Community</a>
+        </div>
+        <center>
+    <div class="Games Container">
+        <a href ="https://www.crazygames.com/game/fragen" target="_blank">
+            <div class="game-card">
+            <img src="fragen.png" alt="fragen">
+        </a>
+
+        <a href="https://www.crazygames.com/game/attack-of-duty" target="_blank">
+            <div class="game-card">
+                <img src="Attack of duty.png" alt="Attack of duty">
+            </a>
+
+        <a href="https://www.crazygames.com/game/cyberpunk-resistance" target="_blank">
+            <div class="game-card">
+                <img src="Cyberpunk.png" alt="game">
+        </a>
+        
+        <a href="https://www.crazygames.com/game/hazmob-fps-online-shooter" target="_blank">
+            <div class="game-card">
+                <img src="Hazmob.png" alt="Hazmob FPS">
+        </a>
+        
+        <a href="https://www.crazygames.com/game/kour-io" target="_blank">
+            <div class="game-card">
+                <img src="Kour io.png" alt="game">
+        </a>
     </div>
+    </center>
     <div class="footer">
         <p>@copy all rights & reserved by FPS madness</p>
     </div>
-
 </body>
 
 </html>
